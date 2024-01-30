@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Khan Academy
-// @version      1.4
+// @version      1.5
 // @description  bettertools for khan
 // @author       JD Downes
 // @match        https://www.khanacademy.org/*
@@ -74,11 +74,12 @@
 
     const originalFetch = window.fetch;
     window.fetch = function () {
-        return originalFetch.apply(this, arguments).then((res) => {
+        return originalFetch.apply(this, arguments).then(async (res) => {
             if (res.url.includes("/getAssessmentItem")) {
                 const clone = res.clone();
-                clone.json().then(json => {
-                    let item, question;
+                const json = await clone.json()
+
+let item, question;
 
                     try {
                         item = json.data.assessmentItem.item.itemData;
@@ -108,12 +109,11 @@
                                 return dropdownAnswerFrom(question).log();
                         }
                     });
-                });
             }
 
             if (!window.loaded) {
                 console.clear();
-                console.log("%c Better Kahn Tools ", "color: mediumvioletred; -webkit-text-stroke: .5px black; font-size:40px; font-weight:bolder; padding: .2rem;");
+                console.log("%c Better Kahn Tools ", "color: blue; -webkit-text-stroke: .5px black; font-size:40px; font-weight:bolder; padding: .2rem;");
                 console.log("%cCreated by JD Downes", "color: white; -webkit-text-stroke: .5px black; font-size:15px; font-weight:bold;");
                 window.loaded = true;
             }
