@@ -1,5 +1,5 @@
 # betterkhantools
-## A simple tampermonkey userscript written in javascript
+## A simple tampermonkey userscript written in js
 Adds some nice to haves for khan academy and a few quality of life implementations <br>
 &#x2022; fixed a crash when opening photos in a new tab <br>
 &#x2022; stops khan from throwing 800 million html errors <br>
