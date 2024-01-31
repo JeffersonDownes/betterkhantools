@@ -4,7 +4,7 @@ Adds some nice to haves for khan academy and a few quality of life implementatio
 
 ### 1.6 Changelog (Coming soon):
 - [ ] support for special characters in console
-- [ ] numbered Answers
+- [ ] numbered answers
 
 ### 1.5 Changelog (1/30/24):
 - support for latest version of khan
