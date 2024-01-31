@@ -1,7 +1,20 @@
 # betterkhantools
 ## A simple tampermonkey userscript written in javascript
-Adds some nice to haves for khan academy and a few quality of life implementations <br>
-&#x2022; fixed a crash when opening photos in a new tab <br>
-&#x2022; stops khan from throwing 800 million html errors <br>
-&#x2022; general optimization of the website as a whole <br>
-&#x2022; support for photos / graphs <br>
+Adds some nice to haves for khan academy and a few quality of life implementations
+
+### 1.6 Changelog (Coming soon):
+- [ ] Support for special characters in console
+- [ ] Numbered Answers
+
+### 1.5 Changelog (1/30/24):
+- Support for latest version of khan
+- Code optimization
+- fixed a crash when opening photos in a new tab
+- support for photos / graphs
+
+### 1.4 Changelog (5/2/23):
+- stops khan from throwing errors
+- general optimization of the website as a whole
+
+### 1.3 Changelog (4/13/23) :
+- support for the latest version of khan 
