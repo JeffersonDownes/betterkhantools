@@ -3,12 +3,12 @@
 Adds some nice to haves for khan academy and a few quality of life implementations
 
 ### 1.6 Changelog (Coming soon):
-- [ ] Support for special characters in console
-- [ ] Numbered Answers
+- [ ] support for special characters in console
+- [ ] numbered Answers
 
 ### 1.5 Changelog (1/30/24):
-- Support for latest version of khan
-- Code optimization
+- support for latest version of khan
+- code optimization
 - fixed a crash when opening photos in a new tab
 - support for photos / graphs
 
